@@ -73,8 +73,6 @@ src/
 * 📲 **Mobile:** Grid-based stacked layout
 * 💻 **Tablet/Desktop:** Absolute-positioned diagram
 * 📏 Adaptive scaling using:
-
-  * `clamp()`
   * `aspect-ratio`
   * Tailwind breakpoints
 
@@ -87,7 +85,7 @@ src/
 git clone https://github.com/Raja28/Atomity.git
 
 # Navigate to project
-cd Atomity - cloud-infra-visualizer
+cd atomity
 
 # Install dependencies
 npm install
