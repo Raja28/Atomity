@@ -1,0 +1,127 @@
+
+@import "tailwindcss";
+
+/* ================= THEME TOKENS ================= */
+@theme {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-sidebar-background: hsl(var(--sidebar-background));
+  --color-sidebar-foreground: hsl(var(--sidebar-foreground));
+}
+
+@layer base {
+  :root {
+    --background: 225 25% 8%;
+    --foreground: 210 40% 95%;
+
+    --card: 225 25% 12%;
+    --card-foreground: 210 40% 95%;
+
+    --popover: 225 25% 12%;
+    --popover-foreground: 210 40% 95%;
+
+    --primary: 195 100% 50%;
+    --primary-foreground: 225 25% 8%;
+
+    --secondary: 260 60% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 225 20% 18%;
+    --muted-foreground: 215 20% 55%;
+
+    --accent: 170 80% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 225 20% 18%;
+    --input: 225 20% 18%;
+    --ring: 195 100% 50%;
+
+    --radius: 0.75rem;
+
+
+    --glow-primary: 195 100% 50%;
+    --glow-secondary: 260 60% 55%;
+    --glow-accent: 170 80% 45%;
+
+    --glass: 225 25% 14%;
+    --glass-border: 225 20% 22%;
+
+    --node-aws: 33 100% 50%;
+    --node-azure: 210 100% 50%;
+    --node-gcp: 4 80% 56%;
+    --node-onprem: 260 60% 55%;
+
+    --chart-bar-1: 195 100% 50%;
+    --chart-bar-2: 260 60% 55%;
+    --chart-bar-3: 170 80% 45%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+.glass {
+  background: hsl(var(--glass) / 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid hsl(var(--glass-border) / 0.5);
+}
+
+.glow-primary {
+  box-shadow: 0 0 20px hsl(var(--glow-primary) / 0.15),
+              0 0 60px hsl(var(--glow-primary) / 0.05);
+}
+
+.glow-secondary {
+  box-shadow: 0 0 20px hsl(var(--glow-secondary) / 0.15),
+              0 0 60px hsl(var(--glow-secondary) / 0.05);
+}
+
+.glow-accent {
+  box-shadow: 0 0 20px hsl(var(--glow-accent) / 0.15),
+              0 0 60px hsl(var(--glow-accent) / 0.05);
+}
+
+.bg-grid {
+  background-image: 
+    linear-gradient(hsl(var(--glass-border) / 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--glass-border) / 0.3) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
