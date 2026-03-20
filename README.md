@@ -1,16 +1,107 @@
-# React + Vite
+# 🌐 Atomity - Cloud Infrastructure Visualization
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and animated **multi-cloud infrastructure dashboard** built with **React, Tailwind CSS, and Framer Motion**.
 
-Currently, two official plugins are available:
+This project visually represents cloud providers like **AWS, Azure, Google Cloud, and On-Premise systems** along with resource monitoring.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔗 Live Demo
 
-## React Compiler
+[🌍 View Live Project](https://atomity-chi.vercel.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* ⚡ **Responsive Design** (Mobile → Desktop)
+* 🔗 **Animated connection lines between cloud providers**
+* ☁️ **Multi-cloud architecture visualization**
+* ✨ **Smooth animations using Framer Motion**
+* 🎨 **Custom design system using CSS variables**
+
+---
+
+## 🖼️ Preview
+
+> Clean and interactive infrastructure diagram with real-time feel
+
+* Central resource monitoring chart
+* Four cloud environments:
+
+  * AWS
+  * Azure
+  * Google Cloud
+  * On-Premise
+
+---
+
+## 🛠️ Tech Stack
+
+* **React.js**
+* **Tailwind CSS (v4 with @theme)**
+* **Framer Motion**
+* **SVG for custom icons and diagrams**
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+│
+├── components/infra
+│   ├── CloudNode.jsx
+│   ├── ConnectionLines.jsx
+│   ├── InfrastructureDiagram.jsx
+│   ├── NodeIcon.jsx
+│   ├── ProviderLogos.jsx
+│   ├── ResourceChart.jsx
+│
+├── hooks/
+|  └── use-mobile.jsx
+|
+├── pages/
+│   └── index.jsx
+│
+└── App.jsx
+└── index.css
+```
+
+---
+
+## 📱 Responsiveness
+
+* 📲 **Mobile:** Grid-based stacked layout
+* 💻 **Tablet/Desktop:** Absolute-positioned diagram
+* 📏 Adaptive scaling using:
+
+  * `clamp()`
+  * `aspect-ratio`
+  * Tailwind breakpoints
+
+---
+
+## ⚙️ Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/Raja28/Atomity.git
+
+# Navigate to project
+cd Atomity - cloud-infra-visualizer
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+---
+
+## 👨‍💻 Author - Raja S
+
+Built with focus on UI precision and scalability.
+
+---
+
+⭐ If you like this project, consider giving it a star!
