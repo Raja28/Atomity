@@ -10,13 +10,9 @@ This project visually represents cloud providers like **AWS, Azure, Google Cloud
 
 ---
 
-## 🚀 Features
+## 🚀 Feature
 
-* ⚡ **Responsive Design** (Mobile → Desktop)
-* 🔗 **Animated connection lines between cloud providers**
-* ☁️ **Multi-cloud architecture visualization**
-* ✨ **Smooth animations using Framer Motion**
-* 🎨 **Custom design system using CSS variables**
+* ⚡ **Option B** The section shown between **0:45–0:55** in the video
 
 ---
 
